@@ -11051,3 +11051,80 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-04 18:15:28 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered partials/_header.html.erb (519.6ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (2.3ms)
+  Rendered partials/_flash_message.html.erb (1.6ms)
+Completed 200 OK in 541ms (Views: 538.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:21:51 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (702.8ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (1.8ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+Completed 200 OK in 808ms (Views: 806.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:27:31 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_header.html.erb (469.5ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.7ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+Completed 200 OK in 504ms (Views: 501.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:28:53 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered partials/_header.html.erb (121.8ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.6ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:29:58 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered partials/_header.html.erb (469.8ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (1.8ms)
+  Rendered partials/_flash_message.html.erb (12.1ms)
+Completed 200 OK in 595ms (Views: 511.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:30:45 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered partials/_header.html.erb (164.2ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (3.3ms)
+  Rendered partials/_flash_message.html.erb (2.2ms)
+Completed 200 OK in 197ms (Views: 195.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 18:31:28 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered partials/_header.html.erb (1003.3ms)
+  Rendered partials/_shims.html.erb (28.1ms)
+  Rendered partials/_navigation.html.erb (1.5ms)
+  Rendered partials/_flash_message.html.erb (1.2ms)
+Completed 200 OK in 1076ms (Views: 1074.0ms | ActiveRecord: 0.0ms)
+
+

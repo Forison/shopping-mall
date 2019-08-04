@@ -106,3 +106,74 @@
     border-radius: 0;
     margin-left:5%;
 }
+.icon-bar{
+    background: gold;
+}
+// special shapes
+  .burst-8-wrap{
+      position: absolute;
+  }
+   .burst-8 {
+      background: red;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      text-align: center;
+      transform: rotate(20deg);
+    }
+    .burst-8:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 40px;
+      background: red;
+      transform: rotate(135deg);
+    }
+    // // another special shape
+    // #burst-12 {
+    //   background: red;
+    //   width: 80px;
+    //   height: 80px;
+    //   position: relative;
+    //   text-align: center;
+    // }
+    // #burst-12:before,
+    // #burst-12:after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   height: 80px;
+    //   width: 80px;
+    //   background: red;
+    // }
+    // #burst-12:before {
+    //   transform: rotate(30deg);
+    // }
+    // #burst-12:after {
+    //   transform: rotate(60deg);
+    // }
+    // // another special shape
+    
+    // #star-six {
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 50px solid transparent;
+    //   border-right: 50px solid transparent;
+    //   border-bottom: 100px solid red;
+    //   position: relative;
+    // }
+    // #star-six:after {
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 50px solid transparent;
+    //   border-right: 50px solid transparent;
+    //   border-top: 100px solid red;
+    //   position: absolute;
+    //   content: "";
+    //   top: 30px;
+    //   left: -50px;
+    // } 
+    // // end of special shape 
