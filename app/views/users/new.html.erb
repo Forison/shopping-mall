@@ -1,24 +1,26 @@
 <%= provide(:title, "signup")%>
-<div class="container">
-<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3  col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 signup_wrap">
-<h1 class="text-center signup">Signup</h1>
-<%= form_for(@user , url: users_new_path ) do |f| %>
- <%= render "partials/error_messages" %>
- <%= f.label :name %>
-  <%= f.text_field :name, class: 'form-control' %>
+<div class="space"></div>
+<div class="container ">
+    <div
+        class=" shaddow col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3  col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 signup_wrap">
+        <h1 class="text-center signup">Signup</h1>
+        <%= form_for(@user , url: users_new_path ) do |f| %>
+        <%= render "partials/error_messages" %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
 
- <%= f.label :email %>
- <%= f.email_field :email ,class: "form-control" %>
- 
- <%= f.label :password %>
- <%= f.password_field :password,  class: "form-control" %>
+        <%= f.label :email %>
+        <%= f.email_field :email ,class: "form-control" %>
 
- <%= f.label :password_confirmation %>
- <%= f.password_field :password_confirmation ,class: "form-control" %>
+        <%= f.label :password %>
+        <%= f.password_field :password,  class: "form-control" %>
 
- <%= f.submit "create" , class: "btn btn-primary" %>
- <p>already a member ? <%= link_to "log in" , sessions_new_path %> </p>
-<% end %>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation ,class: "form-control" %>
 
-</div>
+        <%= f.submit "create" , class: "btn btn-primary" %>
+        <p>already a member ? <%= link_to "log in" , sessions_new_path %> </p>
+        <% end %>
+
+    </div>
 </div>
