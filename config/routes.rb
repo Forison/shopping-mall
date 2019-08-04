@@ -1,14 +1,7 @@
 Rails.application.routes.draw do
 
-
-  get 'posts/index'
-  get 'posts/new'
-  post 'posts/new' , to: "posts#create"
-  get 'posts/show'
-  get 'posts/edit'
-  root 'posts#index'
-  get '/', to: "posts#index"
-
+  root "home#index"
+  get 'home/index'
   get '/users/new' , to: "users#new"
   post '/users/new' , to: "users#create"
 
