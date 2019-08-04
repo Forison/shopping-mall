@@ -10091,3 +10091,171 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 250ms (Views: 248.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-04 16:14:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+  Rendered partials/_header.html.erb (104.4ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (2.1ms)
+  Rendered partials/_flash_message.html.erb (1.1ms)
+  Rendered partials/_navitwo.html.erb (2.9ms)
+Completed 200 OK in 131ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:17:44 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+  Rendered partials/_header.html.erb (239.2ms)
+  Rendered partials/_shims.html.erb (0.5ms)
+  Rendered partials/_navigation.html.erb (1.4ms)
+  Rendered partials/_flash_message.html.erb (2.1ms)
+  Rendered partials/_navitwo.html.erb (5.6ms)
+Completed 200 OK in 267ms (Views: 264.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:18:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_header.html.erb (253.2ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (1.6ms)
+  Rendered partials/_flash_message.html.erb (0.7ms)
+  Rendered partials/_navitwo.html.erb (6.2ms)
+Completed 200 OK in 276ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:20:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_header.html.erb (127.8ms)
+  Rendered partials/_shims.html.erb (0.5ms)
+  Rendered partials/_navigation.html.erb (1.6ms)
+  Rendered partials/_flash_message.html.erb (2.6ms)
+  Rendered partials/_navitwo.html.erb (2.9ms)
+Completed 200 OK in 149ms (Views: 147.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:24:00 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+  Rendered partials/_header.html.erb (98.2ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (1.5ms)
+  Rendered partials/_flash_message.html.erb (2.4ms)
+  Rendered partials/_navitwo.html.erb (1.6ms)
+Completed 200 OK in 121ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:25:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (391.9ms)
+  Rendered partials/_shims.html.erb (0.5ms)
+  Rendered partials/_navigation.html.erb (1.4ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+  Rendered partials/_navitwo.html.erb (1.2ms)
+Completed 200 OK in 411ms (Views: 409.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:27:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (245.2ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.3ms)
+  Rendered partials/_flash_message.html.erb (0.7ms)
+  Rendered partials/_navitwo.html.erb (1.5ms)
+Completed 200 OK in 270ms (Views: 268.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:28:39 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered partials/_header.html.erb (94.0ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (2.6ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+  Rendered partials/_navitwo.html.erb (1.4ms)
+Completed 200 OK in 120ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:31:42 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+  Rendered partials/_header.html.erb (156.8ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (2.9ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+  Rendered partials/_navitwo.html.erb (2.9ms)
+Completed 200 OK in 181ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:34:49 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (95.2ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.4ms)
+  Rendered partials/_flash_message.html.erb (0.7ms)
+  Rendered partials/_navitwo.html.erb (1.5ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:35:34 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_header.html.erb (115.0ms)
+  Rendered partials/_shims.html.erb (0.5ms)
+  Rendered partials/_navigation.html.erb (3.5ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+  Rendered partials/_navitwo.html.erb (3.1ms)
+Completed 200 OK in 141ms (Views: 139.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:36:02 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+  Rendered partials/_header.html.erb (84.3ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (1.5ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+  Rendered partials/_navitwo.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:36:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+  Rendered partials/_header.html.erb (108.5ms)
+  Rendered partials/_shims.html.erb (0.7ms)
+  Rendered partials/_navigation.html.erb (2.1ms)
+  Rendered partials/_flash_message.html.erb (1.0ms)
+  Rendered partials/_navitwo.html.erb (1.6ms)
+Completed 200 OK in 130ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 16:37:01 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+  Rendered partials/_header.html.erb (126.8ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.6ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+  Rendered partials/_navitwo.html.erb (1.9ms)
+Completed 200 OK in 150ms (Views: 147.8ms | ActiveRecord: 0.0ms)
+
+
