@@ -7,6 +7,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.3'
 gem 'bootstrap-sass', '3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem "font-awesome-rails"
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3' 

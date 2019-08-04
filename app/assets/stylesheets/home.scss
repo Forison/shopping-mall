@@ -1,0 +1,46 @@
+
+.shaddow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.section_one_left{
+    width: 100%;
+    height: 384px;
+    background: red;
+}
+.section_one_mid{
+    width: 100%;
+    height: 384px;
+    background: red;
+}
+.section_one_right{
+    width: 100%;
+    height: 384px;
+    background: red;
+}
+.section_two{
+    width: 100%;
+    height: 295px;
+    background: blue; 
+}
+.section_three{
+    width: 100%;
+    height: 140px;
+    background: blue;
+}
+.section_four{
+    width: 100%;
+    height: 199px;
+    background: green;
+}
+.navbar-fixed-bottom{
+    background:#fff;
+}
+.form-bottom{
+    padding: 5px;
+    width: 100%;
+}
+.rounded{
+    border: 0;
+    border-radius: 0;
+    margin-left: 20px;
+}
