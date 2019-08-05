@@ -13965,3 +13965,50 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-05 07:04:40 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (9.3ms)
+  Rendered partials/_header.html.erb (117.2ms)
+  Rendered partials/_shims.html.erb (1.0ms)
+  Rendered partials/_navigation.html.erb (1.4ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+Completed 200 OK in 142ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 07:08:35 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+  Rendered partials/_header.html.erb (5648.9ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (6.0ms)
+  Rendered partials/_flash_message.html.erb (0.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 5684ms (Views: 5681.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 07:09:21 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (13.8ms)
+  Rendered partials/_header.html.erb (101.8ms)
+  Rendered partials/_shims.html.erb (1.0ms)
+  Rendered partials/_navigation.html.erb (1.4ms)
+  Rendered partials/_flash_message.html.erb (0.8ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 138ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 07:09:43 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+  Rendered partials/_header.html.erb (108.1ms)
+  Rendered partials/_shims.html.erb (0.6ms)
+  Rendered partials/_navigation.html.erb (1.3ms)
+  Rendered partials/_flash_message.html.erb (2.6ms)
+  Rendered partials/_footer.html.erb (0.6ms)
+Completed 200 OK in 143ms (Views: 141.1ms | ActiveRecord: 0.0ms)
+
+
