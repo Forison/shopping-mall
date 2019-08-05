@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'goods/new'
+  get 'goods/edit'
+  get 'goods/show'
   root "home#index"
   get 'home/index'
   get '/users/new' , to: "users#new"
