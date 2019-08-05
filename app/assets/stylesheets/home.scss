@@ -141,6 +141,19 @@
       background: red;
       transform: rotate(135deg);
     }
+    .talkbubble-wrap{
+      position:fixed;
+      top: 85%;
+      bottom: 0;
+      left: 80%;
+      width: 80px;
+      height: 80px;
+      z-index: 3;
+      opacity: 0.8;
+    }
+    .talkbubble-wrap > .btn{
+        border-radius: 50%;
+    }
     // // another special shape
     // #burst-12 {
     //   background: red;

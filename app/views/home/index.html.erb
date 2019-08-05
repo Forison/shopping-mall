@@ -364,3 +364,37 @@
 
 </div>
 <!--end-main-container-->
+<div class="talkbubble-wrap">
+    <button type="button" class="btn fa-lg talkbubble shaddow" data-toggle="modal"
+        data-target="#myModal"><%= fa_icon "comments" %> Get quotation</button>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Get a Quotation</h4>
+            </div>
+            <div class="modal-body">
+                <%= form_for(Post.new , url: users_new_path) do |f| %>
+
+                <%= f.label :author %>
+                <%= f.text_field :author, class: 'form-control' %>
+
+                <%= f.label :headline %>
+                <%= f.text_field :headline ,class: "form-control" %>
+
+                <%= f.label :content %>
+                <%= f.text_area :content,  class: "form-control" %>
+                <%= f.submit "Upload Article" ,class: "btn btn-info" %>
+                <% end %>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
