@@ -6,21 +6,31 @@
     width: 100%;
     height: 384px;
     background: red;
+    border-radius: 4px;
+}
+
+.section_one_left > p{
+    padding: 2% 0% 0% 5%;
 }
 .section_one_mid{
     width: 100%;
     height: 384px;
-    background: red;
+    background: green;
+    border-radius: 4px;
 }
 .section_one_right{
     width: 100%;
-    height: 384px;
-    background: red;
+    height: 175px;
+    background: rebeccapurple;
+    border-radius: 4px;
 }
 .section_two_1{
     background: blue; 
     width: 100%;
     height: 295px;
+}
+.move{
+    margin: 0 auto;
 }
 
 .section_two_2{
