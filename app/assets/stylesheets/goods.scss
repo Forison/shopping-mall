@@ -1,3 +1,52 @@
 // Place all the styles related to the goods controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.good_left{
+  width: 100%;
+  height: 500px;
+  border: 1px solid blue;
+}
+.good_right{
+  width: 100%;
+  height: 500px;
+  border: 1px solid green;
+}
+.before_main_section{
+    width: 100%;
+    height: 80px;
+    border: 1px solid yellow;
+}
+.items{
+   width: 100%;
+   height: 350px;
+   border: 1px solid blue;
+}
+.item-photo{
+  width: 100%;
+  height: 220px;
+   border: 1px solid gold;
+}
+
+.item-brand{
+  width: 100%;
+  height: 30px;
+   border: 1px solid green;
+}
+
+.item-description{
+  width: 100%;
+  height: 50px;
+   border: 1px solid black;
+}
+
+.items-price{
+  width: 100%;
+  height: 50px;
+   border: 1px solid seagreen;
+}
+.sect_image_1{
+  width: 60px;
+  height: 60px;
+  background: black;
+  border:3px solid orangered;
+}

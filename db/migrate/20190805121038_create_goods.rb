@@ -4,7 +4,7 @@ class CreateGoods < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :brand
       t.string :category
-      t.string :gender
+      t.string :sex
       t.text :description
       t.float :price
 

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_08_05_121038) do
     t.string "name"
     t.string "brand"
     t.string "category"
-    t.string "gender"
+    t.string "sex"
     t.text "description"
     t.float "price"
     t.datetime "created_at", null: false

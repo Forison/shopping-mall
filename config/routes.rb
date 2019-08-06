@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-
-  get 'goods/new'
-  get 'goods/edit'
-  get 'goods/show'
+  get "goods/index"
+  get "goods/new"
+  post "goods/new"
+  get "goods/:id" ,to: "goods#show"
+  # resources :goods
   root "home#index"
   get 'home/index'
   get '/users/new' , to: "users#new"
