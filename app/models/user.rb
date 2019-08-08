@@ -43,4 +43,11 @@ class User < ApplicationRecord
         self.activation_token  = User.new_token
         self.activation_digest = User.digest(activation_token)
     end
+    # user role determination
+    def admin?
+        return true if User.where(id: current_user.id ).pluck(:admin) == [true]
+    end
+    def regular_user?
+        return true if User.where(id: current_user.id ).pluck(:admin) == [false]
+    end
 end

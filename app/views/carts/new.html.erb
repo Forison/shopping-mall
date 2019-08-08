@@ -1,0 +1,25 @@
+<%= provide(:title, "signup")%>
+<div class="space"></div>
+<div class="container ">
+    <div class=" shaddow col-xs-10 mx-auto col-sm-6  col-md-4 col-lg-4 signup_wrap">
+        <h1 class="text-center signup">Signup</h1>
+        <%= form_for(@checkout , url: users_new_path ) do |f| %>
+        <%= render "partials/error_messages" , object: f.object %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email ,class: "form-control" %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password,  class: "form-control" %>
+
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation ,class: "form-control" %>
+
+        <%= f.submit "create" , class: "btn btn-primary" %>
+        <p class="note">already a member ? <%= link_to "log in" , sessions_new_path %> </p>
+        <% end %>
+
+    </div>
+</div>

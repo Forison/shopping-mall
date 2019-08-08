@@ -1,18 +1,20 @@
 class GoodsController < ApplicationController  
   def index
+    @categories=Good.pluck("category").uniq
     @goods = Good.order(created_at: :desc)
   end
   def new
+    
     @good = Good.new
   end
   def create
-    @good = Good.new( goods_params )
+    @good = Good.create!(goods_params)
     if @good.save
-      flash[:success] = "item has been added to store"
-      redirect_to root_path
+      flash[:success] = "item stored"
+      redirect_back fallback_location: @good
       else
       flash[:warning] = "oops, items could not be added to store"
-      redirect_to root_path
+      redirect_back fallback_location: @good
     end
   end
 
@@ -25,6 +27,6 @@ class GoodsController < ApplicationController
   end
 
   def goods_params
-     params.require(:good).permit(:name, :brand, :category, :sex, :description, :price)
+     params.require(:good).permit(:name, :brand, :category, :sex, :description, :price, avatar: [])
   end
 end

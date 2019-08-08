@@ -1,30 +1,48 @@
 <%= provide(:title, "add an item")%>
 <div class="space"></div>
+
 <div class="container ">
-    <div class=" shaddow col-xs-10 mx-auto col-sm-8  col-md-6 col-lg-5 signup_wrap">
+    <div class=" shaddow col-xs-10 col-sm-10  col-md-8 col-lg-8 mx-auto signup_wrap">
         <h1 class="text-center signup">Upload Item</h1>
-        <%= form_for(@good , url: goods_new_path ) do |f| %>
+        <%= form_for(@good , url: goods_path ) do |f| %>
 
-        <%= f.label :name %>
-        <%= f.text_field :name, class: 'form-control' %>
+        <%= render 'partials/error_messages', object: f.object %>
 
-        <%= f.label :brand %>
-        <%= f.text_field :brand, class: 'form-control' %>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
 
-        <%= f.label :category %>
-        <%= f.text_field :category,  class: "form-control" %>
+                    <%= f.label :name %>
+                    <%= f.text_field :name, class: 'form-control' %>
 
-        <%= f.label :sex %>
-        <%= f.text_field :sex ,class: "form-control" %>
+                    <%= f.label :brand %>
+                    <%= f.text_field :brand, class: 'form-control' %>
 
-        <%= f.label :description %>
-        <%= f.text_area :description ,class: "form-control" %>
+                    <%= f.label :category %>
+                    <div class="form-control">
+                        <%= f.select :category, [ ['category1','category1'],['category2','category2'] ],html: { 'data-name'=> 'category'} %>
+                    </div>
+                    <%= f.label :sex %>
+                    <div class="form-control">
+                        <%= f.select :sex, [ ['female','female'],['male','male'],['unisex','unisex'],['not required','not required'] ],html: {'data-name'=> 'sex'} %>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
 
-        <%= f.label :price %>
-        <%= f.text_field :price ,class: "form-control" %>
+                    <%= f.label :description %>
+                    <%= f.text_area :description ,class: "form-control" %>
 
-        <%= f.submit "upload" , class: "btn btn-primary" %>
+                    <%= f.label :price %>
+                    <%= f.text_field :price ,class: "form-control" %>
 
+                    <%= f.label :avatar %>
+                    <%= f.file_field :avatar, multiple: true ,class: "form-control" %>
+
+                    <%= f.submit "upload" , class: "btn btn-primary" %>
+
+                </div>
+            </div>
+        </div>
         <% end %>
 
     </div>

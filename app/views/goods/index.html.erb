@@ -14,7 +14,14 @@
             <div class="card">
                 <div class="card-header d-flex">
                     <p class="mr-auto">pagination</p>
-                    <input type="select" class="form-control" style="width:200px;height:20px">
+                    <div class="form-group">
+                        <label for="sel1">Sort by</label>
+                        <select class="form-control" id="sel1" style="width: 200px; height: 10px">
+                            <% @categories.each do |category|%>
+                            <option><%= category %></option>
+                            <% end %>
+                        </select>
+                    </div>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -24,7 +31,7 @@
                                 <div class="item-brand"></div>
                                 <div class="item-description"></div>
                                 <div class="item-price"></div>
-                                <button class="btn btn-default">BUY</button>
+                                <button class="btn btn-default d-block mx-auto">BUY</button>
                             </div>
 
                         </div>
@@ -34,7 +41,7 @@
                                 <div class="item-brand"></div>
                                 <div class="item-description"></div>
                                 <div class="item-price"></div>
-                                <button class="btn btn-default">BUY</button>
+                                <button class="btn btn-default d-block mx-auto">BUY</button>
                             </div>
 
                         </div>
@@ -44,7 +51,7 @@
                                 <div class="item-brand"></div>
                                 <div class="item-description"></div>
                                 <div class="item-price"></div>
-                                <button class="btn  btn-default">BUY</button>
+                                <button class="btn  btn-default d-block mx-auto">BUY</button>
                             </div>
 
                         </div>
@@ -54,7 +61,7 @@
                                 <div class="item-brand"></div>
                                 <div class="item-description"></div>
                                 <div class="item-price"></div>
-                                <button class="btn  btn-default">BUY</button>
+                                <button class="btn  btn-default d-block mx-auto">BUY</button>
                             </div>
 
                         </div>
