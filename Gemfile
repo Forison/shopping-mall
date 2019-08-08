@@ -9,6 +9,8 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem "font-awesome-rails"
 gem 'image_processing', '~> 1.2'
+gem 'will_paginate',           '3.1.7'
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3' 

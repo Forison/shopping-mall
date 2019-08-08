@@ -46,7 +46,28 @@
 }
 .sect_image_1{
   width: 60px;
-  height: 60px;
-  background: black;
-  border:3px solid orangered;
+}
+.good-image-wrap{
+  width: 100px;
+  border-radius: 2px;
+  
+}
+.show-main-image-wrap{
+  margin-top: 5%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+
+.main-image-wrap{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.poster{
+  width: 100%;
+  margin-top: 10px;
+  height: 160px;
+  border: 1px solid silver;
+  background-color: silver;
 }

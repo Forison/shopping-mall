@@ -3,15 +3,30 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-2 col-sm-2 col-md-2 col-lg-1">
-            <div class="sect_image_1">
-                <%= image_tag url_for @good.avatar.last %>
-            </div>
-            <div class="sect_image_1"></div>
-            <div class="sect_image_1"></div>
-            <div class="sect_image_1"></div>
-            <div class="sect_image_1"></div>
+
+            <%= image_tag @good.avatar.second, class: "show-main-image-wrap" %>
+            <%= image_tag @good.avatar.last, class: "show-main-image-wrap" %>
+            <%= image_tag @good.avatar.second, class: "show-main-image-wrap" %>
+            <%= image_tag @good.avatar.last, class: "show-main-image-wrap" %>
+            <%= image_tag @good.avatar.second, class: "show-main-image-wrap" %>
+
         </div>
-        <div class="col-10 col-sm-4 col-md-4 col-lg-4" style="height:300px; border: 1px solid green"></div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-7" style="height:400px; border: 1px solid yellow"></div>
+        <div class="col-10 col-sm-4 col-md-4 col-lg-4">
+            <%= image_tag @good.avatar.last, class: "main-image-wrap" %>
+        </div>
+        <div class="col-8 col-sm-4 col-md-4 col-lg-5">
+            <h1 class="text-center"><%= @good.name %></h1>
+            <small class="mx-auto"><%= @good.brand %></small>
+            <hr>
+            <p>sample app</p>
+            <hr>
+
+            <p><%= @good.description %></p>
+            <hr>
+        </div>
+        <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+            <div class="poster"></div>
+            <div class="poster"></div>
+        </div>
     </div>
 </div>

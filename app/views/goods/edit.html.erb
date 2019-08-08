@@ -1,8 +1,69 @@
-<%= provide(:title, "edit items")%>
+<%= provide(:title, "Edit")%>
 <div class="space"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-5" style="height:300px; border: 1px solid green"></div>
-        <div class="col-lg-7" style="height:400px; border: 1px solid yellow"></div>
+
+<div class="container ">
+    <div class="shaddow col-xs-10 col-sm-10  col-md-10 col-lg-10 mx-auto signup_wrap">
+        <h1 class="text-center signup">Edit Goods</h1>
+        <%= form_for(@good) do |f| %>
+
+        <%= render 'partials/error_messages', object: f.object %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-sm-12 col-md-12 col-lg-2">
+                    <%= image_tag @good.avatar.first, class: "good-image-wrap" %></div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+
+                    <%= f.label :name %>
+                    <%= f.text_field :name, class: 'form-control' %>
+
+                    <%= f.label :brand %>
+                    <%= f.text_field :brand, class: 'form-control' %>
+
+                    <%= f.label :category %>
+                    <div class="form-control">
+                        <%= f.select :category,
+                         [ 
+                         ['mobile','mobile'],
+                         ['tablet','tablet'],
+                         ['laptop','laptop'],
+                         ['tv','tv'],
+                         ['car','car'],
+                         ['hoverboard','house'],
+                         ['house','category1'],
+                         ['book','book'] 
+                         ],
+                         html: { 'data-name'=> 'category'} %>
+                    </div>
+                    <%= f.label :sex %>
+                    <div class="form-control">
+                        <%= f.select :sex, [
+                         ['female','female'],
+                         ['male','male'],
+                         ['unisex','unisex'],
+                         ['not required','not required'] 
+                         ],
+                         html: {'data-name'=> 'sex'} %>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+
+                    <%= f.label :description %>
+                    <%= f.text_area :description ,class: "form-control" %>
+
+                    <%= f.label :price %>
+                    <%= f.text_field :price ,class: "form-control" %>
+
+                    <%= f.label 'product photo' %>
+                    <%= f.file_field :avatar, multiple: true ,class: "form-control" %>
+
+                    <%= f.submit "upload" , class: "btn btn-primary" %>
+                    <button class="btn btn-danger">
+                        <%= link_to "delete good from store" , good_path, method: :delete, data: {confirm: "are you sure, you want delete this items?"} %>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <% end %>
     </div>
 </div>

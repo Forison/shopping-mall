@@ -20,11 +20,29 @@
 
                     <%= f.label :category %>
                     <div class="form-control">
-                        <%= f.select :category, [ ['category1','category1'],['category2','category2'] ],html: { 'data-name'=> 'category'} %>
+                        <%= f.select :category,
+                         [
+                         ['mobile','mobile'],
+                         ['tablet','tablet'],
+                         ['laptop','laptop'],
+                         ['tv','tv'],
+                         ['car','car'],
+                         ['hoverboard','house'],
+                         ['house','category1'],
+                         ['book','book'] 
+                         ],
+                         html: { 'data-name'=> 'category'} %>
                     </div>
                     <%= f.label :sex %>
                     <div class="form-control">
-                        <%= f.select :sex, [ ['female','female'],['male','male'],['unisex','unisex'],['not required','not required'] ],html: {'data-name'=> 'sex'} %>
+                        <%= f.select :sex, [ 
+                         ['female','female'],
+                         ['male','male'],
+                         ['unisex','unisex'],
+                         ['not required',
+                         'not required'] 
+                         ],
+                         html: {'data-name'=> 'sex'} %>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
@@ -35,10 +53,10 @@
                     <%= f.label :price %>
                     <%= f.text_field :price ,class: "form-control" %>
 
-                    <%= f.label :avatar %>
+                    <%= f.label 'product photo' %>
                     <%= f.file_field :avatar, multiple: true ,class: "form-control" %>
 
-                    <%= f.submit "upload" , class: "btn btn-primary" %>
+                    <%= f.submit "Update" , class: "btn btn-primary" %>
 
                 </div>
             </div>

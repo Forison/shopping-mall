@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
   get 'carts/index'
-  # get "goods/index"
-  # get "goods/new"
-  # post "goods/new"
-  # get "goods/:id" ,to: "goods#show"
   resources :goods
   root "home#index"
   get 'home/index'
