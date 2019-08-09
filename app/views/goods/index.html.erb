@@ -4,10 +4,16 @@
     <div class="row">
 
         <div class="d-none d-sm-none d-md-block col-md-3 col-lg-3">
-            <h1 class="text-center"> The category</h1>
             <div class="good_left">
-
+                <h1 class="text-center"> The category</h1>
+                <% 15.times do %>
+                <%= label_tag :category, class: "checkbox inline" do %>
+                <%=  check_box_tag :category %>
+                <span><%= link_to "category one" %></span>
+                <% end %>
+                <% end %>
             </div>
+
         </div>
         <div class="col-sm-12 col-md-9 col-lg-9">
             <h1 class="text-center"> The category being displayed </h1>
@@ -25,49 +31,37 @@
                 </div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-sm-4  col-md-4 col-lg-3">
+                        <% @goods.each do |item| %>
+                        <div class="col-6 col-sm-4  col-md-4 col-lg-3">
                             <div class="items">
-                                <div class="item-photo"></div>
-                                <div class="item-brand"></div>
-                                <div class="item-description"></div>
-                                <div class="item-price"></div>
-                                <button class="btn btn-default d-block mx-auto">BUY</button>
-                            </div>
 
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-3">
-                            <div class="items">
-                                <div class="item-photo"></div>
-                                <div class="item-brand"></div>
-                                <div class="item-description"></div>
-                                <div class="item-price"></div>
-                                <button class="btn btn-default d-block mx-auto">BUY</button>
-                            </div>
+                                <%= image_tag item.avatar.last, class: "index-main-image-wrap" %>
+                                <br>
+                                <small>
+                                    <%= item.brand %>
+                                </small>
+                                <p>
+                                    <%= item.description[0...45] + " ... " %>
+                                </p>
+                                <h4>
+                                    <%= number_to_currency(item.price, unit: "GH$") %>
+                                </h4>
 
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-3">
-                            <div class="items">
-                                <div class="item-photo"></div>
-                                <div class="item-brand"></div>
-                                <div class="item-description"></div>
-                                <div class="item-price"></div>
-                                <button class="btn  btn-default d-block mx-auto">BUY</button>
                             </div>
+                            <% if logged_in? %>
+                            <%= form_for(@order, :url=> { :controller => "orders", :action => "create"} ) do |f| %>
 
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-lg-3">
-                            <div class="items">
-                                <div class="item-photo"></div>
-                                <div class="item-brand"></div>
-                                <div class="item-description"></div>
-                                <div class="item-price"></div>
-                                <button class="btn  btn-default d-block mx-auto">BUY</button>
-                            </div>
+                            <%= f.hidden_field :quantity, value:1, class: 'form-control' %>
+                            <%= f.hidden_field :user_id, value:current_user.id, class: 'form-control' %>
+                            <%= f.hidden_field :good_id, value:item.id, class: "form-control" %>
 
+                            <%= f.submit "BUY NOW " , class: "d-block mx-auto btn btn-primary" %>
+                            <% end %>
+                            <% end %>
+                            <div class="clear_fix"></div>
                         </div>
+                        <% end %>
                     </div>
-
-                    <div class="clear_fix"></div>
 
                 </div>
             </div>

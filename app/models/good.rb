@@ -12,9 +12,9 @@ class Good < ApplicationRecord
     
 
     default_scope->{ order(created: :desc)}
-    # def thumbnail
-    #     self.avatar.each{|c| c.variant(resize: '200 * 200')}
-    # end
+    def thumbnail
+        self.avatar.each{|c| c.variant(resize: '200 * 200')}
+    end
     private
     def format_inputs
         self.name=name.capitalize

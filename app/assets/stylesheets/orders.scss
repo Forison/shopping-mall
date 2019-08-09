@@ -1,0 +1,21 @@
+// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.cart-title{
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.nav-item > .small{
+    position: absolute;
+    background-color: #ff0000;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%
+}
+.small >small{
+   position: absolute;
+   font-size: 10px;
+   color: #fff;  
+   font-weight: bolder;
+   margin:2px 0px 0px 5.5px;
+}

@@ -1,9 +1,28 @@
+<%= provide(:title, 'cart')%>
 <div class="space"></div>
 <div class="container">
-    <div class="row">
-        <div class="col-4 col-sm-6 col-md-6 col-lg-5" style=" height:150px;border: 1px solid gold"></div>
-        <div class="col-2 col-sm-2 col-md-2 col-lg-1" style=" height:150px;border: 1px solid balck"></div>
-        <div class="col-3 col-sm-2 col-md-2 col-lg-3" style=" height:150px; border: 1px solid green"></div>
-        <div class="col-3 col-sm-2 col-md-2 col-lg-3" style=" height:150px;border: 1px solid gold"></div>
+    <% @cart.each do |cart| %>
+    <div class="row ">
+        <div class="col-3 col-sm-4 col-md-4 col-lg-4">
+            <%= image_tag (get_item( cart.good_id).avatar.third), class: "img-fluid" %>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+            <h2 class="text-center cart-title"> Quantity </h2>
+            <p class="text-center"> <%= cart.quantity%> </p>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+            <h2 class="text-center cart-title"> Price </h2>
+            <p class="text-center"> <%= number_to_currency( get_item( cart.good_id).price) %></p>
+        </div>
+        <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+            <h2 class="text-center cart-title"> Brand </h2>
+            <p class="text-center"> <%= get_item( cart.good_id).brand %> </p>
+        </div>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+            <h2 class="text-center cart-title">Total </h2>
+            <p class="text-center"><%= number_to_currency(get_item( cart.good_id).price * cart.quantity)  %></p>
+        </div>
     </div>
+    <hr>
+    <% end %>
 </div>

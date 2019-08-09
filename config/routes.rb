@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'carts/index'
+  # post 'goods' , to: "order#create"
   resources :goods
+  resources :orders
   root "home#index"
   get 'home/index'
   get '/users/new' , to: "users#new"

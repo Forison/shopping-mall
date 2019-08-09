@@ -3,8 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .good_left{
   width: 100%;
-  height: 500px;
-  border: 1px solid blue;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .good_right{
   width: 100%;
@@ -18,34 +19,20 @@
 }
 .items{
    width: 100%;
-   height: 350px;
-   border: 1px solid blue;
-}
-.item-photo{
-  width: 100%;
-  height: 220px;
-   border: 1px solid gold;
+   height: 320px;
+   border: 1px solid silver;
+   border-radius: 5px;
+   padding: 2%;
 }
 
-.item-brand{
-  width: 100%;
-  height: 30px;
-   border: 1px solid green;
+.items-btn{
+  color: white;
+  background-color: orangered;
 }
 
-.item-description{
-  width: 100%;
-  height: 50px;
-   border: 1px solid black;
-}
-
-.items-price{
-  width: 100%;
-  height: 50px;
-   border: 1px solid seagreen;
-}
-.sect_image_1{
-  width: 60px;
+.items:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   z-index: 2;
 }
 .good-image-wrap{
   width: 100px;
@@ -56,13 +43,16 @@
   margin-top: 5%;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid silver;
 }
 
 .main-image-wrap{
   width: 100%;
   border-radius: 5px;
-  border: 1px solid silver;
+
+}
+.index-main-image-wrap{
+  width: 100%;
+  border-radius: 5px;
 }
 .poster{
   width: 100%;

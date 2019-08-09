@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     attr_accessor :remember_token , :activation_token
     before_create :create_activation_digest
-    has_many :posts
+    has_many :orders
     before_save { self.email = email.downcase }
 
     validates :name , presence: true

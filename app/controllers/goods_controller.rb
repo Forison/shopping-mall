@@ -1,5 +1,6 @@
 class GoodsController < ApplicationController  
   def index
+    @order = Order.new
     @categories=Good.pluck("category").uniq
     @goods = Good.paginate(page: params[:page])
   end
@@ -47,8 +48,11 @@ class GoodsController < ApplicationController
     redirect_to goods_path
     end
   end
-
+  private
   def goods_params
-     params.require(:good).permit(:name, :brand, :category, :sex, :description, :price, avatar: [])
+     params.require(:good).permit(:name, :brand, :category, :sex, :quantity , :description, :price, avatar: [])
+  end
+  def order_params
+        params.require(:order).permit(:quantity, :user_id, :good_id)
   end
 end

@@ -1,4 +1,6 @@
-<% flash.each do |message_type,message| %>
-<div class="space"></div>
-<div class="alert alert-<%=message_type%>"><%=message%></div>
-<%end%>
+<div class="ml-auto" style="position:absolute">
+    <% flash.each do |message_type,message| %>
+    <div class="space"></div>
+    <div class="alert alert-<%=message_type%>"><%=message%></div>
+    <%end%>
+</div>

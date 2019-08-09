@@ -4,7 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <a class="navbar-brand" href="<%= root_path%>" id="logo">sample app</a>
-
+  <%= render "partials/flash_message"%>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <form class="form-inline mx-auto ">
       <div class="input-group">
@@ -36,6 +36,9 @@
       </li>
 
       <li class="nav-item">
+        <div class="small">
+          <small><%= selected_item(current_user.id) if logged_in? %></small>
+        </div>
         <a class="nav-link disabled" href="#"><%= fa_icon "shopping-cart" %> Cart</a>
       </li>
       <li class="nav-item">
