@@ -4,6 +4,6 @@ module OrdersHelper
     end
     
     def selected_item(item_id)
-        Order.find(item_id).size
+        Order.where(user_id: item_id).count
     end
 end
