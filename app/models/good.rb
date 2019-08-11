@@ -11,7 +11,7 @@ class Good < ApplicationRecord
      validates_presence_of :price
     
 
-    default_scope->{ order(created: :desc)}
+    default_scope->{ order(created_at: :desc)}
     def thumbnail
         self.avatar.each{|c| c.variant(resize: '200 * 200')}
     end
