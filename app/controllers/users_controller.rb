@@ -13,11 +13,12 @@ class UsersController < ApplicationController
     if @user.save
       # UserMailer.account_activation(@user).deliver_now
       log_in @user
-      flash[:success] = "welcome"
+      flash[:success] = "welcome to our page"
       # flash[:info] = "Please check your email to activate your account."
       # log_in @user
       redirect_to root_path
     else
+      flash[:danger] = "oops could sign up"
       render 'new'
     end
   end
