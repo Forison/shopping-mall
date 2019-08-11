@@ -13,6 +13,7 @@ class OrdersController < ApplicationController
             redirect_to goods_path
         end
     end
+   
     def order_params
         params.require(:order).permit(:quantity, :user_id, :good_id)
     end
