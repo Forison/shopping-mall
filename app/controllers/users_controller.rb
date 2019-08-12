@@ -14,9 +14,9 @@ class UsersController < ApplicationController
       # UserMailer.account_activation(@user).deliver_now
       # flash[:info] = "Please check your email to activate your account."
       # log_in @user
-      redirect_to root_path
       log_in @user
       flash[:success] = "welcome to our page"
+      redirect_to root_path
     else
       flash[:danger] = "oops could sign up"
       render 'new'

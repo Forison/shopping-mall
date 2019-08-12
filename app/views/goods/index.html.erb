@@ -49,7 +49,7 @@
 
                             </div>
                             <% if logged_in? %>
-                            <%= form_for(@order, :url=> { :controller => "orders", :action => "create"} ) do |f| %>
+                            <%= form_for(@order, :url=> { :controller => "orders", :action => "create"}, remote: true ) do |f| %>
 
                             <%= f.hidden_field :quantity, value:1, class: 'form-control' %>
                             <%= f.hidden_field :user_id, value:current_user.id, class: 'form-control' %>

@@ -63,7 +63,7 @@
             </div>
             <div class="modal-body">
                 <h3>ADDRESS</h3>
-                <%= form_for(@checkout, url: { :controller => 'carts' , :action => 'create_checkout'} ) do |f| %>
+                <%= form_for(@checkout, url: { :controller => 'carts' , :action => 'create_checkout'}) do |f| %>
                 <%= render "partials/error_messages" , object: f.object %>
                 <%= f.label :firstname %>
                 <%= f.text_field :firstname, class: 'form-control' %>
