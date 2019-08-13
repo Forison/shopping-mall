@@ -156,6 +156,34 @@
       z-index: 3;
       opacity: 0.8;
     }
-    .talkbubble-wrap > .btn{
-        border-radius: 50%;
+    .white{
+        color: white;
+    }
+    .h4{
+        margin-top: 30px;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
+    .h4 +h6{
+        margin-bottom: 10px;
+    }
+    .ul{   
+         padding: 5%;
+         height: 30%;
+         
+            li{
+                text-decoration: none;
+                font-size: 0.80rem;
+            }
+        }
+    .lastmost{
+        border-top: 1px solid silver;
+        padding: 10px;
+        }
+    .foot_link{
+        color: white;
+        font-weight: 500;
+    }
+    .foot_link:hover{
+        color: silver;
     }

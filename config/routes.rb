@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   # get 'carts/index'
   # post 'goods' , to: "order#create"
   post '/carts/new' , to: 'carts#create_checkout'
+  post '/home/new' , to: 'home#newsletter'
   resources :carts
   resources :goods
   resources :orders

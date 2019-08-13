@@ -29,7 +29,7 @@
         <div
             class="col-9 col-sm-8 col-md-8 col-lg-8 ml-auto mt-0 shaddow cart_bottom_function_box d-flex justify-content-around">
             <span> <%= fa_icon "heart-o" %> add to saved items </span>
-            <span><%=  link_to  cart_path(cart.id), method: :delete ,data: {confirm: "are you sure?"} do %>
+            <span><%=  link_to  cart_path(cart.id), method: :delete ,data: {confirm: "are you sure?"},  remote: true do %>
                 <%= fa_icon "trash" %> remove from cart
                 <%end%>
             </span>

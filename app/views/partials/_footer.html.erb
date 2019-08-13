@@ -1,5 +1,100 @@
 <div class="clear_fix"></div>
-<footer>
-    <div class="footer_one"></div>
-    <div class="footer_two"></div>
-</footer>
+<div class="main_footer">
+    <div class="container-fluid">
+        <div class="footer_one ">
+            <div class="row">
+                <div class="col-4 col-lg-2 mt-3">
+                    <strong class="white">sampleApp</strong>
+                </div>
+                <div class="col-8 col-lg-7 mt-3">
+                    <p class="text-center white">NEW TO SAMPLE APP? <br> <small>Subscribe to our newsletter to get
+                            updates
+                            on
+                            our
+                            latest offers!</small></p>
+                    <form class="form-inline" action="">
+                        <div class="inp_wrap mx-auto">
+                            <%= form_for(Notify.new, :url=> { :controller => "home", :action => "newsletter"}, remote: true ) do |f| %>
+                            <%= f.text_field :email %>
+                            <%= f.submit "Submit" %>
+                            <% end %>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-none d-lg-block col-lg-3 mt-3"></div>
+            </div>
+        </div>
+        <div class="footer_two white">
+            <div class="row ">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4 class="text-center h4">LET US HELP YOU</h4>
+                    <ul class="ul">
+                        <li><%= link_to "help center", users_new_path,class: "foot_link" %></li>
+                        <li><%= link_to "contact center", users_new_path,class: "foot_link" %></li>
+                        <li><%= link_to "How to buy on Jumia", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Delivery timelines and fees", users_new_path, class: "foot_link"%></li>
+                        <li><%= link_to "Return Policy", users_new_path, class: "foot_link"%></li>
+                        <li><%= link_to "Corporate and Bulk Purchases", users_new_path, class: "foot_link" %></li>
+                    </ul>
+                    <br>
+                    <h6 class="text-center h4">JOIN US ON</h6>
+                    <div class="text-center">
+                        <span> <%= fa_icon("facebook" , class: 'join_tags') %> </span>
+                        <span> <%= fa_icon("instagram" , class: 'join_tags') %> </span>
+                        <span> <%= fa_icon("linkedin" , class: 'join_tags')%> </span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4 class="text-center h4">MAKE MONEY WITH SAMPLE APP</h4>
+                    <ul class="ul">
+                        <li><%= link_to "Sell on Jumia", users_new_path ,class: "foot_link"%></li>
+                        <li><%= link_to "Service charges", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Become a Sales Consultant", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Become a Logistics Service Partner", users_new_path,class: "foot_link"%></li>
+                    </ul>
+                    <br>
+                    <h6 class="text-center h4">PAYMENT METHOD</h6>
+                    <div class="text-center">
+                        <span> <%= fa_icon("paypal" , class: 'join_tags') %> </span>
+                        <span> <%= fa_icon("cc-mastercard" , class: 'join_tags') %> </span>
+                        <span> <%= fa_icon("cc-visa" , class: 'join_tags')%> </span>
+                        <span> <%= fa_icon("cc-discover" , class: 'join_tags')%> </span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4 class="text-center h4">ABOUT SAMPLE APP GHANA</h4>
+                    <ul class="ul">
+                        <li><%= link_to "About us", users_new_path, class: "foot_link"%></li>
+                        <li><%= link_to "Testimonials", users_new_path, class: "foot_link"%></li>
+                        <li><%= link_to "Jumia careers", users_new_path, class: "foot_link"%></li>
+                        <li><%= link_to "Terms and Conditions", users_new_path ,class: "foot_link"%></li>
+                        <li><%= link_to "Privacy Policy", users_new_path,class: "foot_link" %></li>
+                    </ul>
+                    <br>
+                    <h6 class="text-center h4">JOIN US ON</h6>
+                    <p class="text-center">0502582802</p>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <h4 class="text-center h4">SAMPLE INTERNATIONAL</h4>
+                    <ul class="ul">
+                        <li><%= link_to "Sell on Jumia", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Service charges", users_new_path ,class: "foot_link"%></li>
+                        <li><%= link_to "Become a Sales Consultant", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Terms and Conditions", users_new_path, class: "foot_link" %></li>
+                        <li><%= link_to "Become a Logistics Service Partner", users_new_path,class: "foot_link" %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lastmost">
+            <div class="text-center">
+                <span> <%= fa_icon("paypal" , class: 'join_tags') %> </span>
+                <span> <%= fa_icon("cc-mastercard" , class: 'join_tags') %> </span>
+                <span> <%= fa_icon("cc-visa" , class: 'join_tags')%> </span>
+                <span> <%= fa_icon("cc-discover" , class: 'join_tags')%> </span>
+            </div>
+        </div>
+    </div>
+</div>

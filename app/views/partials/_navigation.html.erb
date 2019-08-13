@@ -16,9 +16,20 @@
       </div>
     </form>
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><%= fa_icon "question-circle" %> Help <span class="sr-only">(current)</span></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <%= fa_icon "question-circle" %> Help
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-center" href="#">contact us <br>0500000000</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Delivery timeline</a>
+          <a class="dropdown-item" href="#">return policy</a>
+          <a class="dropdown-item" href="#">Product rating and review</a>
+        </div>
       </li>
+
       <li class="nav-item">
         <% if !logged_in? %>
         <%= link_to  sessions_new_path, class: "nav-link" do %>
@@ -29,11 +40,12 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          Account
+          <%= logged_in? ? "#{current_user.name.capitalize}" : "Account"  %>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Cart</a>
-          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#"><%= logged_in? ? "Account" : " "  %></a>
+          <a class="dropdown-item" href="#">Orders</a>
+          <a class="dropdown-item" href="#">saved items</a>
           <div class="dropdown-divider"></div>
           <%= link_to "Log out", sessions_destroy_path, method: :delete ,class: "dropdown-item" %>
         </div>
