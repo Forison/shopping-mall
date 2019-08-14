@@ -7,7 +7,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.3'
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-gem "font-awesome-rails"
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'image_processing', '~> 1.2'
 gem 'will_paginate',           '3.1.7'
 gem 'bootstrap-will_paginate', '1.0.0'

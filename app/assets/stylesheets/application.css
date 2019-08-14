@@ -14,3 +14,6 @@
  *= require_self
  *= require_tree .
  */
+.fontawesome-i2svg-pending body {
+	display: none;
+}
