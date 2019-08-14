@@ -15,8 +15,12 @@
                     <form class="form-inline" action="">
                         <div class="inp_wrap mx-auto">
                             <%= form_for(Notify.new, :url=> { :controller => "home", :action => "newsletter"}, remote: true ) do |f| %>
-                            <%= f.text_field :email %>
-                            <%= f.submit "Submit" %>
+                            <div class="col-10">
+                                <%= f.text_field :email %>
+                            </div>
+                            <div class="col-2">
+                                <%= f.submit "Submit" %>
+                            </div>
                             <% end %>
                         </div>
                     </form>
