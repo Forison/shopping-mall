@@ -1,6 +1,6 @@
 <%= provide(:title, 'cart')%>
 
-<div class="container">
+<div class="container-fluid">
     <% @cart.each do |cart| %>
     <div class="row ">
         <div class="col-3 col-sm-4 col-md-2 col-lg-1">
@@ -35,9 +35,8 @@
             </span>
         </div>
     </div>
-    <hr>
     <% end %>
-</div>
+
 <div class="d-flex justify-content-end total">
     <span>Total: <%= get_total_sum(@all_orders) %></span>
 </div>
@@ -51,4 +50,64 @@
     <button type="button" class="btn btn-info" data-toggle="modal" data-target="#checkout">
         CHECKOUT
     </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="checkout" tabindex="-1" role="dialog" aria-labelledby="checkoutLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutLabel">CHECKOUT</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>ADDRESS</h3>
+                <%= form_for(@checkout, url: { :controller => 'carts' , :action => 'create_checkout'}) do |f| %>
+                <%= render "partials/error_messages" , object: f.object %>
+                <%= f.label :firstname %>
+                <%= f.text_field :firstname, class: 'form-control' %>
+                <%= f.label :lastname %>
+                <%= f.text_field :lastname, class: 'form-control' %>
+                <%= f.label :telephone_number %>
+                <%= f.telephone_field :mobile, class: 'form-control' %>
+                <%= f.label :location %>
+                <%= f.text_field :location, class: 'form-control' %>
+                <%= f.hidden_field :user_id, value:current_user.id, class: 'form-control' %>
+
+                <h3>DELIVERY METHOD</h3>
+                <div class="jumbotron" style="padding: 2%">
+                    <%= f.radio_button :home_delivery, class: 'form-control' %>
+                    <%= f.label :home_delivery, 'Home & Office Delivery' %><br>
+                    <small>Delivered between Monday 12 Aug and Friday 16 Aug Allow 3 extra business days for other
+                        cities
+                        for GH₵ 10</small><br>
+
+                    <%= f.radio_button :at_pick_up , class: 'form-control' %>
+                    <%= f.label :at_pick_up, 'Pick up from desired post office' %><br>
+                    <small>Ready for pick up between Thursday 15 Aug and Friday 16 Aug Allow 12 extra days for items
+                        shipped
+                        from overseas.</small><br>
+                </div>
+                <h3>PAYMENT METHOD</h3>
+                <div class="jumbotron" style="padding: 2%">
+                    <%= f.radio_button :cash, class: 'form-control' %>
+                    <%= f.label :cash, 'Pay on Delivery' %><br>
+                    <small>Pay Cash on delivery
+                        Complete your order and pay cash on delivery
+                        Make sure you have the exact amount because the delivery agents do not carry change</small><br>
+
+                    <%= f.radio_button :momo , class: 'form-control' %>
+                    <%= f.label :momo, 'Pay via mobile money' %><br>
+                    <small>pay via mobile money</small><br>
+                </div>
+                <%= f.hidden_field :selected, class: 'form-control' %>
+
+                <%= f.submit "CONFIRM ORDER", class: "btn btn-primary" %>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
