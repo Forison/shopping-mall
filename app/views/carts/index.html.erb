@@ -8,23 +8,23 @@
         </div>
         <div class="d-none  d-md-block col-md-3 col-lg-3">
             <h2 class="text-center cart-title"> <%= get_item( cart.good_id).name %> </h2>
-            <p class="text-center"> <%= get_item( cart.good_id).description[0..30] + '...' %> </p>
+            <p class="text-center f_13"> <%= get_item( cart.good_id).description[0..30] + '...' %> </p>
         </div>
         <div class="col-2 col-sm-2 col-md-2 col-lg-2">
-            <h2 class="text-center cart-title"> Quantity </h2>
-            <p class="text-center"> <%= cart.quantity%> </p>
+            <h2 class="text-center cart-title"> Qty </h2>
+            <p class="text-center f_13"> <%= cart.quantity%> </p>
         </div>
         <div class="col-2 col-sm-2 col-md-2 col-lg-2">
             <h2 class="text-center cart-title"> Price </h2>
-            <p class="text-center"> <%= number_to_currency( get_item( cart.good_id).price) %></p>
+            <p class="text-center f_13"> <%= number_to_currency( get_item( cart.good_id).price) %></p>
         </div>
         <div class="col-3 col-sm-2 col-md-2 col-lg-2">
             <h2 class="text-center cart-title"> Brand </h2>
-            <p class="text-center"> <%= get_item( cart.good_id).brand %> </p>
+            <p class="text-center f_13"> <%= get_item( cart.good_id).brand %> </p>
         </div>
         <div class="col-2 col-sm-2 col-md-1 col-lg-2">
             <h2 class="text-center cart-title">Total </h2>
-            <p class="text-center"><%= number_to_currency(get_item( cart.good_id).price * cart.quantity)  %></p>
+            <p class="text-center f_13"><%= number_to_currency(get_item( cart.good_id).price * cart.quantity)  %></p>
         </div>
         <div
             class="col-9 col-sm-8 col-md-8 col-lg-8 ml-auto mt-0 shaddow cart_bottom_function_box d-flex justify-content-around">
