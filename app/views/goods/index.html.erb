@@ -5,13 +5,17 @@
 
         <div class="d-none d-sm-none d-md-block col-md-3 col-lg-3">
             <div class="good_left">
-                <h1 class="text-center"> The category</h1>
-                <% 15.times do %>
-                <%= label_tag :category, class: "checkbox inline" do %>
-                <%=  check_box_tag :category %>
-                <span><%= link_to "category one" %></span>
-                <% end %>
-                <% end %>
+
+                <p><%= fa_icon "tv" %> <a>Electronics</a></p>
+                <p><%= fa_icon "tshirt" %> <a>Fashion</a></p>
+                <p><%= fa_icon "mobile"%> <a>Computer &Phone and Tablet</a></p>
+                <p><%= fa_icon "chair-office" %> <a>Home and Office</a></p>
+                <p><%= fa_icon "shoe-print" %> <a>Health & Beauty</a></p>
+                <p><%= fa_icon "baby-carriage" %> <a>Baby Products</a></p>
+                <p><%= fa_icon "scarf" %> <a>Textile and Leather Product</a></p>
+                <p><%= fa_icon "users-crown" %> <a>Traditional</a></p>
+                <p><%= fa_icon "rocketchat" %> <a>Others</a></p>
+
             </div>
 
         </div>
@@ -40,9 +44,7 @@
                                 <small>
                                     <%= item.brand %>
                                 </small>
-                                <p>
-                                    <%= item.description[0...45] + " ... " %>
-                                </p>
+
                                 <h4>
                                     <%= number_to_currency(item.price, unit: "GH$") %>
                                 </h4>
